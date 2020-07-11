@@ -1,4 +1,16 @@
+.footer-links {
+    font-size: 0.7rem;
+}
 
+@media (min-width: 768px) {
+    .footer-links {
+        font-size: 0.9rem;
+    }
+}
+
+a.ulLink {
+    text-decoration: underline;
+}
 .container {
     padding-top: 10px;
     margin-bottom: 20px;
@@ -15,22 +27,22 @@
     border-radius: 5px;
 }
 
-@media(min-width: 768px){
-
+@media (min-width: 768px) {
     section {
         margin-bottom: 20px;
     }
 
-    .container h1.title, .container h2.subtitle {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    .container h1.title,
+    .container h2.subtitle {
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
 .container h2.subtitle {
     padding-top: 20px;
     padding-bottom: 8px;
-    border-bottom :1px solid #eee;
+    border-bottom: 1px solid #eee;
     color: #0a4;
 }
 
@@ -49,7 +61,7 @@ pre {
 .button {
     margin-bottom: 8px;
 }
-@media(max-width: 767px){
+@media (max-width: 767px) {
     .hero-body .button {
         width: 100%;
     }
@@ -57,7 +69,7 @@ pre {
 
 .hero-body {
     padding-top: 0 !important;
-    padding-bottom: 0 !important;           
+    padding-bottom: 0 !important;
 }
 
 .hero-body .container {
@@ -70,7 +82,7 @@ pre {
     display: block;
     padding-top: 20px;
 }
-@media(min-width: 1024px){
+@media (min-width: 1024px) {
     .hero-body img.screenshot {
         max-width: 600px;
         margin: 0 auto;
@@ -90,7 +102,7 @@ h1.title {
     padding: 20px;
 }
 
-@media(max-width: 1088px){
+@media (max-width: 1088px) {
     .container {
         padding: 10px;
     }
@@ -104,6 +116,7 @@ h1.title {
     height: 100%;
 }
 
-.container.features, .container.getting-started {
+.container.features,
+.container.getting-started {
     margin-top: 20px;
 }
