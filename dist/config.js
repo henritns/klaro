@@ -137,7 +137,7 @@ var klaroConfig = {
             // cookies set by this app. If the user withdraws consent for a
             // given app, Klaro will then automatically delete all matching
             // cookies.
-            cookies: [/^ga/i],
+            cookies: [/^_(ga|gid).*/i],
             // you can also explicitly provide a path and a domain for
             // a given cookie. This is necessary if you have apps that
             // set cookies for a path that is not "/" or a domain that
@@ -152,7 +152,12 @@ var klaroConfig = {
             // the consent state for the app changes (true=consented). Passes
             // the `app` config as the second parameter as well.
             callback: function (consent, app) {
-                logConsent(consent, app);
+                if (consent) {
+                    // ...
+                  } else {
+                    // ...
+                }
+                
             },
 
             // If "required" is set to true, Klaro will not allow this app to
@@ -176,10 +181,11 @@ var klaroConfig = {
             purposes: ['advertising'],
             default: true,
             cookies: [
-                [/^_pk_.*$/, '/', 'klaro.kiprotect.com'], //for the production version
-                [/^_pk_.*$/, '/', 'localhost'], //for the local version
-                'piwik_ignore',
-            ],
+                [/^__hstc.*$/],
+                [/^hubspotutk.*$/],
+                [/^__hssc.*$/],
+                [/^__hssrc.*$/]
+                ]
         },
         {
             name: 'facebook',

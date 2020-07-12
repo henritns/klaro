@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="EN-US">
     <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172430587-1"></script>
+ 
+
+
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,11 +23,6 @@
             src="assets/prism.js"
         ></script>
         <script defer type="application/javascript" src="config.js"></script>
-        <script
-            defer
-            type="application/javascript"
-            src="configs/i18n.js"
-        ></script>
         <script
             defer
             type="application/javascript"
@@ -66,7 +66,7 @@
                         <a class="ulLink" onClick="return klaro.show();"
                             >Show cookie consents</a
                         >
-                        |
+                        /
                         <a
                             class="ulLink"
                             onClick="klaro.getManager().resetConsent();location.reload()"
@@ -77,129 +77,6 @@
                 </div>
             </div>
         </section>
-        <section>
-        <div class="container features">
-            <a name="features"></a>
-            <div class="columns">
-                <div class="column is-4 column-eq">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title">
-                                Simple &amp; User-Friendly
-                            </p>
-                            <div class="content">
-                                <p>
-                                    Klaro is simple, unobtrusive and
-                                    optimized for mobile as well as
-                                    desktop browsers. It tries to stay
-                                    out of the way while helping you to
-                                    be fully transparent and compliant.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column is-4 column-eq">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title">
-                                Open Source
-                            </p>
-                            <div class="content">
-                                <p>
-                                    Klaro is licensed under a permissive
-                                    <strong>BSD-3</strong> license, which
-                                    means that you can use it freely for
-                                    commercial and non-commercial purposes.
-                                    No hidden fees or restrictions.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column is-4 column-eq">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="title">
-                                Easy to Customize
-                            </p>
-                            <div class="content">
-                                <p>
-                                    Klaro can manage both inline and
-                                    external scripts as well as static
-                                    tracking elements like images or
-                                    stylesheet links. New apps can be added
-                                    with just a few lines of code.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section>
-        <div class="container questions">
-            <h1 class="subtitle"><a name="more-features">More features</a></h1>
-            <div class="columns">
-                <div class="column is-6">
-                    <div class="content">
-                        <ul>
-                            <li>
-                                <strong>Privacy by design &amp; default</strong>: Klaro
-                                supports implicit and explicit (our favorite!) modes of consent and can
-                                make sure that no third-party apps are loaded without the
-                                consent of the user.
-                            </li>
-                            <li>
-                                <strong>Smart change detection</strong>: Klaro automatically detects
-                                config changes and will renew consent whenever you add a new app
-                                for which the user didn't give consent yet.
-                            </li>
-                            <li>
-                                <strong>Multilingual</strong>: Klaro has full support for
-                                internationalization and makes it easy to add or modify translations
-                                with just a few lines of code.
-´
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="column is-6">
-                    <div class="content">
-                        <ul>
-                            <li>
-                                <strong>Mobile-friendly and compatible with all modern browsers</strong>: Klaro
-                                works with all major browsers and is optimized for both desktop
-                                and mobile clients.
-                            </li>
-                            <li>
-                                <strong>Lightweight &amp; fast</strong>: Klaro.js is less than 20 kB
-                                of Javascript (minified + gzipped) and is lightning-fast so that your
-                                users won't notice any difference when using it.
-                            </li>
-                            <li>
-                                <strong>Easy to customize</strong>: Klaro lets you change
-                                the stylesheet to better match your own design and lets you
-                                access its functionality via Javascript as well.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
         <section>
             <div class="container getting-started">
                 <h1 class="title">
@@ -213,7 +90,7 @@
                         <code>klaro.js</code> script and make a few small
                         changes to your third-party/tracking scripts on your
                         page so that Klaro can manage them.
-                        <strong><a href="https://klaro.kiprotect.com/#getting-started">Let's get started!</a></strong>
+                        <strong><a></a>Let's get started!></strong>
                     </p>
                 </div>
                
@@ -224,32 +101,38 @@
         <hr />
 
         <footer class="footer">
-            <nav class="columns level-left">
-          
-                    <p class="level-item column is-2 footer-links">
+            <nav class="level">
+                <div class="level-left">
+                    <p class="level-item has-text-centered">
                         <a class="link is-info">Privacy Policy</a>
                     </p>
-         
-                    <p class="level-item column is-2 footer-links">
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info">|</a>
+                    </p>
+                    <p class="level-item has-text-centered">
                         <a class="link is-info">Cookie Policy</a>
                     </p>
-           
-                    <p class="level-item column is-2 footer-links">
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info">|</a>
+                    </p>
+                    <p class="level-item has-text-centered">
                         <a class="link is-info" onClick="return klaro.show();"
-                            >Show Cookie Consents</a
-                        >                   
+                            >Manage Cookie Consents</a
+                        >                    <p class="level-item has-text-centered">
+                        <a class="link is-info">|</a> 
+                    </p>
                         
                     </p>
-                    <p class="level-item column is-2 footer-links">
+                    <p class="level-item has-text-centered">
                         <a
                             class="link is-info"
                             onClick="klaro.getManager().resetConsent();location.reload()"
-                            >Reset Consents</a
+                            >Reset Cookie Consents</a
                         >
                     </p>
-               
+                </div>
             </nav>
-                     <div class="content has-text-centered footer-links">
+                     <div class="content has-text-centered">
  
                 <p>
                     This website incorporates

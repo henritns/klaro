@@ -1,3 +1,16 @@
+.klaro .cookie-modal .cm-btn.cm-btn-success, .klaro .cookie-notice .cm-btn.cm-btn-success {
+    background: #209cee !important;
+}
+
+.klaro .cookie-modal a, .klaro .cookie-notice a {
+    color: #209cee !important;
+    text-decoration: none;
+}
+
+.toggle-all {
+    font-size: 1.2rem;
+    background-color: #0a4;
+}
 .footer-links {
     font-size: 0.7rem;
 }
