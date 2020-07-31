@@ -199,7 +199,7 @@ var klaroConfig = {
             title: 'Facebook',
             purposes: ['advertising'],
             default: true,
-            cookies: [],
+            cookies: [], //TODO: Fill in
             callback: function (consent, app) {
                 if (consent) {
                     // ...
