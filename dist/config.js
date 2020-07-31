@@ -187,11 +187,27 @@ var klaroConfig = {
                 [/^__hssrc.*$/]
                 ]
         },
+        callback: function (consent, app) {
+            if (consent) {
+                // ...
+              } else {
+                // ...
+            }
+            
+        },
         {
             name: 'facebook',
             title: 'Facebook',
             purposes: ['advertising'],
             default: true,
-        },
-    ],
+            cookies: []
+            callback: function (consent, app) {
+                if (consent) {
+                    // ...
+                  } else {
+                    // ...
+                }
+            }
+        }
+    ]
 };
