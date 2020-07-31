@@ -1,0 +1,23 @@
+{
+  "name": "klaro-example",
+  "version": "1.0.0",
+  "description": "Klaro [klɛro] is a simple consent manager that helps you to be transparent about the third-party applications on your website. It is designed to be extremely simple, intuitive and easy to use while allowing you to be compliant with all relevant regulations (notably GDPR and ePrivacy).",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "surge": "^0.21.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Validos/klaro-example.git"
+  },
+  "author": "Henri Tanskanen",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/Validos/klaro-example/issues"
+  },
+  "homepage": "https://github.com/Validos/klaro-example#readme"
+}

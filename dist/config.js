@@ -127,7 +127,7 @@ var klaroConfig = {
             default: true,
 
             // The title of you app as listed in the consent modal.
-            title: 'Google Analytics',
+            title: 'Google Analytics with Advertising Features',
 
             // The purpose(s) of this app. Will be listed on the consent notice.
             // Do not forget to add translations for all purposes you list here.
