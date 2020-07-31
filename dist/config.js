@@ -154,10 +154,9 @@ var klaroConfig = {
             callback: function (consent, app) {
                 if (consent) {
                     // ...
-                  } else {
+                } else {
                     // ...
                 }
-                
             },
 
             // If "required" is set to true, Klaro will not allow this app to
@@ -184,30 +183,30 @@ var klaroConfig = {
                 [/^__hstc.*$/],
                 [/^hubspotutk.*$/],
                 [/^__hssc.*$/],
-                [/^__hssrc.*$/]
-                ]
-        },
-        callback: function (consent, app) {
-            if (consent) {
-                // ...
-              } else {
-                // ...
-            }
-            
+                [/^__hssrc.*$/],
+            ],
+
+            callback: function (consent, app) {
+                if (consent) {
+                    // ...
+                } else {
+                    // ...
+                }
+            },
         },
         {
             name: 'facebook',
             title: 'Facebook',
             purposes: ['advertising'],
             default: true,
-            cookies: []
+            cookies: [],
             callback: function (consent, app) {
                 if (consent) {
                     // ...
-                  } else {
+                } else {
                     // ...
                 }
-            }
-        }
-    ]
+            },
+        },
+    ],
 };
