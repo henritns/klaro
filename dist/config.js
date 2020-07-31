@@ -113,7 +113,7 @@ var klaroConfig = {
         {
             name: 'essential',
             title: 'Essential Cookies',
-            purposes: ['essential', 'security'],
+            purposes: ['essential'],
             required: true,
         },
         {
