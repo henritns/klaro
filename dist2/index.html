@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+    <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172430587-1"></script>
+ 
+
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Klaro! Consent Manager Utility</title>
+        <link rel="stylesheet" href="assets/bulma.min.css" />
+        <link rel="stylesheet" href="assets/prism.css" />
+        <link
+            data-name="googleFonts"
+            data-href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
+            rel="stylesheet"
+        />
+        <script
+            defer
+            type="application/javascript"
+            src="assets/prism.js"
+        ></script>
+        <script defer type="application/javascript" src="config.js"></script>
+        <script
+            defer
+            type="application/javascript"
+            src="klaro.js"
+            data-config="klaroConfig"
+            data-style-prefix="klaro"
+        ></script>
+
+        <link rel="stylesheet" href="assets/styles.css" />
+    </head>
+
+    <body>
+        <!-- by default, klaro will be appended in the klaro div, or will create one at the end of the body if none exists.
+        it's recommended to have klaro at the top of your content so that screen reader users can be notified early -->
+        <div id="klaro"></div>
+        <section class="hero is-info is-medium is-bold">
+            <div class="hero-head"></div>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">
+                        Klaro Example
+                    </h1>
+                    <h2 class="subtitle">
+                        <a class="ulLink" href="https://klaro.kiprotect.com/"
+                            >Klaro</a
+                        >
+                        is a free &amp; open-source tool that provides an
+                        intuitive, user-friendly and compliant way to manage
+                        consent on your website. Klaro is easy to use and
+                        configure, lightweight and compatible with all modern
+                        browsers. This is an example page.
+                    </h2>
+                    <p>
+                        <a class="ulLink" onClick="return klaro.show();"
+                            >Show cookie consents</a
+                        >
+                        /
+                        <a
+                            class="ulLink"
+                            onClick="klaro.getManager().resetConsent();location.reload()"
+                            >Reset cookie consents</a
+                        >
+                    </p>
+                    <br />
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container getting-started">
+                <h1 class="title">
+                    <a name="getting-started">Getting Started</a>
+                </h1>
+                <div class="content">
+                    <p>
+                        Setting up Klaro on your website is easy and usually
+                        takes less than 10 minutes. All you need to do is write
+                        a small config file, load the
+                        <code>klaro.js</code> script and make a few small
+                        changes to your third-party/tracking scripts on your
+                        page so that Klaro can manage them.
+                        <strong><a href="https://klaro.kiprotect.com/">Let's get started!</a></strong>
+                    </p>
+                    <p>
+                        The source code of this example page resides in a <a href="https://github.com/hhpartners/klaro">Github repository</a>. The repo is also built by Netlify to <a href="https://klaro.netlify.app/">klaro.netlify.app</a>
+                    </p>
+                </div>
+               
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <footer class="footer">
+            <nav class="level">
+                <div class="level-left">
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info">Privacy Policy</a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info">|</a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info">Cookie Policy</a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info">|</a>
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a class="link is-info" onClick="return klaro.show();">
+                    Show Your Cookie Consents </a>
+                     <p class="level-item has-text-centered">
+                        <a class="link is-info">|</a> 
+                    </p>
+                        
+                    </p>
+                    <p class="level-item has-text-centered">
+                        <a
+                            class="link is-info"
+                            onClick="klaro.getManager().resetConsent();location.reload()"
+                            >Reset Cookie Consents</a
+                        >
+                    </p>
+                </div>
+            </nav>
+                     <div class="content has-text-centered">
+ 
+                <p>
+                    This website incorporates
+                    <a href="https://github.com/KIProtect/klaro">Klaro!</a>
+                    licensed under
+                    <a
+                        href="https://github.com/KIProtect/klaro/blob/master/LICENSE"
+                        >BSD-3-Clause</a
+                    >.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
