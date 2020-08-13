@@ -14,6 +14,8 @@ var klaroConfig = {
     // when starting up. If undefined, Klaro will use 'klaro'.
     elementID: 'klaro',
 
+    groupByPurpose: false,
+
     // How Klaro should store the user's preferences. It can be either 'cookie'
     // (the default) or 'localStorage'.
     storageMethod: 'cookie',
