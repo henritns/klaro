@@ -18,6 +18,8 @@ var klaroConfig = {
     // (the default) or 'localStorage'.
     storageMethod: 'cookie',
 
+    groupByPurpose: false,
+
     // You can customize the name of the cookie that Klaro uses for storing
     // user consent decisions. If undefined, Klaro will use 'klaro'.
     cookieName: 'klaro',
